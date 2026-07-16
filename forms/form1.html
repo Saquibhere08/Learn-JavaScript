@@ -3,19 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form 1</title>
+    <title>Document</title>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        p{
+            color: red;
+        }
+    </style>
 </head>
-<style>
-    
-</style>
 <body>
+    <h1>Password validation</h1>
     <form action="">
-        <input type="usernameInput" type="text" name="username" placeholder="Username">
-        <input type="passwordInput" type="password" name="password" placeholder="Password">
-
+        <input id="usernameInput" type="text" name="username" placeholder="username">
+        <input id="passwordInput" type="password" name="password" placeholder="password">
         <p id="passwordErr"></p>
         <button>Submit</button>
     </form>
+
     <script src="./form1.js"></script>
 </body>
 </html>
